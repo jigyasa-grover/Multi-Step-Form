@@ -1,4 +1,4 @@
-// app.js
+
 // create our angular app and inject ngAnimate and ui-router 
 // =============================================================================
 angular.module('formApp', ['ngAnimate', 'ui.router'])
@@ -24,13 +24,13 @@ angular.module('formApp', ['ngAnimate', 'ui.router'])
             templateUrl: 'forms/form-profile.html'
         })
         
-        // url will be /form/interests
+        // url will be /form/ques1
         .state('form.ques1', {
             url: '/ques1',
             templateUrl: 'forms/ques1.html'
         })
         
-        // url will be /form/payment
+        // url will be /form/lastQues
         .state('form.lastQues', {
             url: '/lastQues',
             templateUrl: 'forms/lastQues.html'

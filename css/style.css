@@ -1,17 +1,19 @@
-/* style.css */
-/* BASIC STYLINGS
-============================================================================= */
-
 body {
     padding-top: 20px;
+    /*background: url('../assets/back.jpg');*/
 }
+
+
 /* form styling */
 
 #form-container {
     background: #2f2f2f;
-    margin-bottom: 20px;
     border-radius: 5px;
+    padding: 10px;
+    display: table;
+    margin: 0 auto;
 }
+
 #form-container .page-header {
     background: #151515;
     margin: 0;
@@ -19,9 +21,13 @@ body {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
+
+
 /* numbered buttons */
 
-#status-buttons {} #status-buttons a {
+#status-buttons {}
+
+#status-buttons a {
     color: #FFF;
     display: inline-block;
     font-size: 12px;
@@ -29,9 +35,12 @@ body {
     text-align: center;
     text-transform: uppercase;
 }
+
 #status-buttons a:hover {
     text-decoration: none;
 }
+
+
 /* we will style the span as the circled number */
 
 #status-buttons span {
@@ -43,6 +52,8 @@ body {
     width: 30px;
     border-radius: 50%;
 }
+
+
 /* active buttons turn light green-blue*/
 
 #status-buttons a.active span {
