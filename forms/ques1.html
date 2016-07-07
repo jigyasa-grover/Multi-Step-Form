@@ -1,18 +1,25 @@
 <label>Ques 1?</label>
-<div class="form-group">
+<div class="form-group"  ng-app="">
     <div class="radio">
         <label>
-           <input type="radio" ng-model="formData.type" value="xbox" checked>
+           <input type="radio" value="xbox" name="content" ng-model="content">
            Option 1
         </label>
     </div>
     <div class="radio">
         <label>
-            <input type="radio" ng-model="formData.type" value="ps">
+            <input type="radio" value="ps" name="content" ng-model="content">
             Option 2
         </label>
     </div>
+
+    <div>
+        <p ng-show="content == 'xbox'">Checking form in and out</p>
+    </div>
 </div>
+
+
+
 
 <div class="form-group row">
 <div class="col-xs-6 col-xs-offset-3">

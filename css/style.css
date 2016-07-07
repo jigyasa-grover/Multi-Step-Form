@@ -22,6 +22,15 @@ body {
     border-top-right-radius: 5px;
 }
 
+#about-container {
+    background: #2f2f2f;
+    border-radius: 5px;
+    padding: 10px;
+    display: table;
+    margin: 0 auto;
+}
+
+
 
 /* numbered buttons */
 
