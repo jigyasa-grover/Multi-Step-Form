@@ -29,6 +29,11 @@ angular.module('formApp', ['ngAnimate', 'ui.router'])
             templateUrl: 'forms/ques-numberOfAgents.html'
         })
 
+        .state('form.ques-typesOfAgents', {
+            url: '/ques-typesOfAgents',
+            templateUrl: 'forms/ques-typesOfAgents.html'
+        })
+
         .state('form.ques-maxTime', {
             url: '/ques-maxTime',
             templateUrl: 'forms/ques-maxTime.html'

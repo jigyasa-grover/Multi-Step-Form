@@ -1,40 +1,30 @@
 <div class="row">
-
     <div class="col-sm-9 col-sm-offset-1">
-
         <div id="form-container">
-
             <div class="page-header text-center">
-
                 <h2>HASHKAT: Kinetic Analysis of Twitter-like Networks</h2>
-
                 <br>
                 <!-- the links to our nested states using relative paths -->
                 <!-- add the active class if the state matches our ui-sref -->
                 <div id="status-buttons" class="text-center">
                     <a ui-sref-active="active" ui-sref=".profile"><span>1</span>Profile</a>
-                     <a ui-sref-active="active" ui-sref=".ques-numberOfAgents"><span>2</span>Number of Agents</a>
-                     <a ui-sref-active="active" ui-sref=".ques-maxTime"><span>3</span>Maximum Time</a>
-                     <a ui-sref-active="active" ui-sref=".ques-maxLoops"><span>4</span>Maximum Analysis Steps</a>
+                    <a ui-sref-active="active" ui-sref=".ques-numberOfAgents"><span>2</span>Number of Agents</a>
+                    <a ui-sref-active="active" ui-sref=".ques-typesOfAgents"><span>3</span>Types of Agents</a>
+                    <a ui-sref-active="active" ui-sref=".ques-maxTime"><span>3</span>Maximum Time</a>
+                    <a ui-sref-active="active" ui-sref=".ques-maxLoops"><span>4</span>Maximum Analysis Steps</a>
                     <a ui-sref-active="active" ui-sref=".ques1"><span>3</span>Ques1</a>
                     <a ui-sref-active="active" ui-sref=".lastQues"><span>4</span>last Ques</a>
                 </div>
-
             </div>
-
             <!-- use ng-submit to catch the form submission and use our Angular function -->
             <form id="signup-form" ng-submit="processForm()">
                 <!-- our nested state views will be injected here -->
                 <div id="form-views" ui-view></div>
             </form>
-
         </div>
-
         <!-- show our formData as it is being typed -->
         <pre>
             {{ formData }}
         </pre>
-        
     </div>
-
 </div>
