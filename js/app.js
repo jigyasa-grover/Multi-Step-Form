@@ -23,6 +23,11 @@ angular.module('formApp', ['ngAnimate', 'ui.router'])
             url: '/profile',
             templateUrl: 'forms/form-profile.html'
         })
+
+        .state('form.ques-numberOfAgents', {
+            url: '/ques-numberOfAgents',
+            templateUrl: 'forms/ques-numberOfAgents.html'
+        })
         
         // url will be /form/ques1
         .state('form.ques1', {
