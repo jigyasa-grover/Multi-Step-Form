@@ -33,6 +33,11 @@ angular.module('formApp', ['ngAnimate', 'ui.router'])
             url: '/ques-maxTime',
             templateUrl: 'forms/ques-maxTime.html'
         })
+
+        .state('form.ques-maxLoops', {
+            url: '/ques-maxLoops',
+            templateUrl: 'forms/ques-maxLoops.html'
+        })
         
         // url will be /form/ques1
         .state('form.ques1', {

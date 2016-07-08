@@ -1,8 +1,14 @@
+@import url('http://fonts.googleapis.com/css?family=Lato');
 body {
     padding-top: 20px;
     background: url('../assets/back.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+label {
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
 }
 
 
@@ -91,7 +97,7 @@ ul li {
     position: relative;
     float: left;
     width: 100%;
-    height: 100px;
+    height: 70px;
 }
 
 ul li input[type=radio] {
@@ -103,10 +109,10 @@ ul li label {
     display: block;
     position: relative;
     font-weight: 300;
-    font-size: 1.35em;
+    font-size: 1.20em;
     padding: 25px 25px 25px 80px;
     margin: 10px auto;
-    height: 30px;
+    height: 50px;
     z-index: 9;
     cursor: pointer;
     -webkit-transition: all 0.25s linear;
