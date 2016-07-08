@@ -1,23 +1,48 @@
 <br>
-<label>What is the number of agents you would like in your sample Twitter simulation using Hashkat ?</label>
+<label>What is the maximum number of agents you would like in your sample Twitter simulation using Hashkat ?</label>
 
 <div class="form-group" ng-app="">
 
     <div class="radio">
         <label>
-            <input type="radio" value="100" ng-model="formData.numberOfAgents"> 100
+            <input type="radio" value="100" ng-model="formData.maxNumberOfAgents"> 100
         </label>
     </div>
 
     <div class="radio">
         <label>
-            <input type="radio" value="1000" ng-model="formData.numberOfAgents"> 1000
+            <input type="radio" value="1000" ng-model="formData.maxNumberOfAgents"> 1000
         </label>
     </div>
 
     <div class="radio">
         <label>
-            <input type="radio" value="10000" ng-model="formData.numberOfAgents"> 10000
+            <input type="radio" value="10000" ng-model="formData.maxNumberOfAgents"> 10000
+        </label>
+    </div>
+
+</div>
+
+<br>
+<label>What is the initial number of agents you would like to begin your sample Twitter simulation using Hashkat ?</label>
+
+<div class="form-group" ng-app="">
+
+    <div class="radio">
+        <label>
+            <input type="radio" value="0" ng-model="formData.initialNumberOfAgents"> 0
+        </label>
+    </div>
+
+    <div class="radio">
+        <label>
+            <input type="radio" value="10" ng-model="formData.initialNumberOfAgents"> 10
+        </label>
+    </div>
+
+    <div class="radio">
+        <label>
+            <input type="radio" value="100" ng-model="formData.initialNumberOfAgents"> 100
         </label>
     </div>
 
@@ -25,7 +50,7 @@
 
 <div class="form-group row">
     <div class="col-xs-6 col-xs-offset-3">
-        <a ui-sref="form.lastQues" class="btn btn-block btn-info">
+        <a ui-sref="form.ques-maxTime" class="btn btn-block btn-info">
         Next Section 
         <span class="glyphicon glyphicon-circle-arrow-right"></span>
         </a>

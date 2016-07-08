@@ -1,0 +1,31 @@
+<br>
+<label>What is the maximum time (in minutes) you want the sample Twitter simulation using Hashkat to run ?</label>
+<div class="form-group" ng-app="">
+
+    <ul>
+        <li>
+            <input id="option1" type="radio" value="10" ng-model="formData.maxTime">
+            <label for="option1"> 10 minutes</label>
+            <div class="check"></div>
+        </li>
+        
+        <li>
+            <input id="option2" type="radio" value="100" ng-model="formData.maxTime">
+            <label for="option2"> 100 minutes</label>
+            <div class="check"></div>
+        </li>
+        <li>
+            <input id="option3" type="radio" value="1000" ng-model="formData.maxTime"> 
+            <label for="option3"> 1000 minutes</label>
+            <div class="check"></div>
+        </li>
+    </ul>
+</div>
+<div class="form-group row">
+    <div class="col-xs-6 col-xs-offset-3">
+        <a ui-sref="form.lastQues" class="btn btn-block btn-info">
+        Next Section 
+        <span class="glyphicon glyphicon-circle-arrow-right"></span>
+        </a>
+    </div>
+</div>
