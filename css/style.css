@@ -1,6 +1,8 @@
 body {
     padding-top: 20px;
-    /*background: url('../assets/back.jpg');*/
+    background: url('../assets/back.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 
@@ -30,6 +32,9 @@ body {
     margin: 0 auto;
 }
 
+#about-container p {
+    word-break: break-all;
+}
 
 
 /* numbered buttons */
@@ -50,7 +55,7 @@ body {
 }
 
 
-/* we will style the span as the circled number */
+/* Circled number */
 
 #status-buttons span {
     background: #080808;

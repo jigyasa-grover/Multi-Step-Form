@@ -1,9 +1,9 @@
 
-// create our angular app and inject ngAnimate and ui-router 
+// Creating angular app and inject ngAnimate and ui-router 
 // =============================================================================
 angular.module('formApp', ['ngAnimate', 'ui.router'])
 
-// configuring our routes 
+// Configuring our routes 
 // =============================================================================
 .config(function($stateProvider, $urlRouterProvider) {
     
@@ -36,21 +36,21 @@ angular.module('formApp', ['ngAnimate', 'ui.router'])
             templateUrl: 'forms/lastQues.html'
         });
         
-    // catch all route
-    // send users to the form page 
+    // Catch all route
+    // Send users to the form page 
     $urlRouterProvider.otherwise('/form/profile');
 })
 
-// our controller for the form
+// Form Controller
 // =============================================================================
 .controller('formController', function($scope) {
     
-    // we will store all of our form data in this object
+    // Storing form data in this object
     $scope.formData = {};
     
-    // function to process the form
+    // Function to process the form
     $scope.processForm = function() {
-        alert('awesome!');
+        alert('Awesome!');
     };
     
 });
