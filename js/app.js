@@ -23,6 +23,16 @@ angular.module('formApp', ['ngAnimate', 'ui.router'])
         templateUrl: 'forms/form-profile.html'
     })
 
+    .state('form.ques-maxTime', {
+        url: '/ques-maxTime',
+        templateUrl: 'forms/ques-maxTime.html'
+    })
+
+    .state('form.ques-sizeOfNetwork', {
+        url: '/ques-sizeOfNetwork',
+        templateUrl: 'forms/ques-sizeOfNetwork.html'
+    })
+
     .state('form.ques-numberOfAgents', {
         url: '/ques-numberOfAgents',
         templateUrl: 'forms/ques-numberOfAgents.html'
@@ -33,10 +43,7 @@ angular.module('formApp', ['ngAnimate', 'ui.router'])
         templateUrl: 'forms/ques-typesOfAgents.html'
     })
 
-    .state('form.ques-maxTime', {
-        url: '/ques-maxTime',
-        templateUrl: 'forms/ques-maxTime.html'
-    })
+    
 
     .state('form.ques-maxLoops', {
         url: '/ques-maxLoops',
