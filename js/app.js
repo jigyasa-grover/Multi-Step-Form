@@ -1,6 +1,6 @@
 // Creating angular app and inject ngAnimate and ui-router 
 // =============================================================================
-angular.module('formApp', ['ngAnimate', 'ui.router'])
+angular.module('formApp', ['ngAnimate', 'ui.router', 'ngFileSaver'])
 
 // Configuring our routes 
 // =============================================================================
@@ -53,7 +53,7 @@ angular.module('formApp', ['ngAnimate', 'ui.router'])
         templateUrl: 'forms/ques-typesOfAgents.html'
     })
 
-    
+
 
     .state('form.ques-maxLoops', {
         url: '/ques-maxLoops',
@@ -83,14 +83,32 @@ angular.module('formApp', ['ngAnimate', 'ui.router'])
 
 // Form Controller
 // =============================================================================
-.controller('formController', function($scope) {
+.controller('formController', ['FileSaver', 'Blob', '$scope', function(FileSaver, Blob, $scope) {
 
     // Storing form data in this object
-    $scope.formData = {};
+    $scope.formData =   $scope.formData || {};
+    // {
+    //     "name": "",
+    //     "email": "",
+    //     "maxTime": "",
+    //     "sizeOfNetwork": "",
+    //     "sameAgentRegion": "",
+    //     "sameAgentLanguage": "",
+    //     "agentTastes": "",
+    //     "standardAgent": null,
+    //     "celebrityAgent": null,
+    //     "ideologueAgent": null,
+    //     "humoristAgent": null,
+    //     "companyAgent": null,
+    //     "govtAgent": null
+    // };
 
     // Function to process the form
     $scope.processForm = function() {
         alert('Awesome!');
+        var data = new Blob([$scope.formData], { type: 'text/plain;charset=utf-8' });
+        FileSaver.saveAs(data, 'formData.json');
+
     };
 
-});
+}]);
