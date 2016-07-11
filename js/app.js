@@ -38,6 +38,11 @@ angular.module('formApp', ['ngAnimate', 'ui.router'])
         templateUrl: 'forms/ques-regionLanguage.html'
     })
 
+    .state('form.ques-agentTastes', {
+        url: '/ques-agentTastes',
+        templateUrl: 'forms/ques-agentTastes.html'
+    })
+
     .state('form.ques-numberOfAgents', {
         url: '/ques-numberOfAgents',
         templateUrl: 'forms/ques-numberOfAgents.html'
