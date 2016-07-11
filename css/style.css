@@ -164,7 +164,9 @@ input[type=radio]:checked ~ label {
     color: #0DFF92;
 }
 
+
 /* Styling checkboxes */
+
 .form-group ul {
     list-style: none;
     height: 100%;
