@@ -106,7 +106,7 @@ angular.module('formApp', ['ngAnimate', 'ui.router', 'ngFileSaver'])
     // Function to process the form
     $scope.processForm = function() {
         alert('Awesome!');
-        var data = new Blob([$scope.formData], { type: 'text/plain;charset=utf-8' });
+        var data = new Blob([angular.toJson($scope.formData)], { type: 'text/plain;charset=utf-8' });
         FileSaver.saveAs(data, 'formData.json');
 
     };
