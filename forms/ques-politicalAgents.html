@@ -17,8 +17,8 @@
 
 <div class="col-sm-12" ng-show="formData.politicalAgents != null">
     <br>
-    <br>
-    <img class="col-sm-1" src="assets/user_profile.png">
+    <br>        
+    <img class="col-sm-2" src="assets/cat_profile.png">
     <code ng-show="formData.politicalAgents == 'Yes'"> Okay, your network  will have some users that publish almost exclusively political tweets.</code>
     <code ng-show="formData.politicalAgents == 'No'"> Okay, there are no users that publish almost exclusively political tweets.</code>
     <br><code>Keep going !</code>
@@ -28,7 +28,7 @@
 
 <div class="form-group row" ng-show="formData.politicalAgents != null">
     <div class="col-xs-6 col-xs-offset-3">
-        <a ui-sref="form.ques-typesOfAgents" class="btn btn-block btn-info">
+        <a ui-sref="form.lastQues" class="btn btn-block btn-info">
         Next Section 
         <span class="glyphicon glyphicon-circle-arrow-right"></span>
         </a>
