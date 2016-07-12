@@ -33,9 +33,14 @@ angular.module('formApp', ['ngAnimate', 'ui.router', 'ngFileSaver'])
         templateUrl: 'forms/ques-sizeOfNetwork.html'
     })
 
-    .state('form.ques-regionLanguage', {
-        url: '/ques-regionLanguage',
-        templateUrl: 'forms/ques-regionLanguage.html'
+    .state('form.ques-regionOfAgents', {
+        url: '/ques-regionOfAgents',
+        templateUrl: 'forms/ques-regionOfAgents.html'
+    })
+
+    .state('form.ques-languageOfAgents', {
+        url: '/ques-languageOfAgents',
+        templateUrl: 'forms/ques-languageOfAgents.html'
     })
 
     .state('form.ques-agentTastes', {

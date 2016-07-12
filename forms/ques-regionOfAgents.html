@@ -15,38 +15,20 @@
     </ul>
 </div>
 
-<div class="form-group" ng-app="">
-    <label>Do all the agents in your sample Twitter simulation using Hashkat speak the same language ?</label>
-    <ul>
-        <li>
-            <input id="option3" type="radio" value="Yes" ng-model="formData.sameAgentLanguage">
-            <label for="option3"> Yes, All speak the same language </label>
-            <div class="check"></div>
-        </li>
-        <li>
-            <input id="option4" type="radio" value="No" ng-model="formData.sameAgentLanguage">
-            <label for="option4"> No, All speak different languages </label>
-            <div class="check"></div>
-        </li>
-    </ul>
-</div>
-
-<div class="col-sm-12" ng-show="formData.sameAgentRegion != null && formData.sameAgentLanguage != null">
+<div class="col-sm-12" ng-show="formData.sameAgentRegion != null">
     <br>
     <br>
     <img class="col-sm-2" src="assets/cat_profile.png">
     <code ng-show="formData.sameAgentRegion == 'Yes'"> Cool, All your agents live in the same region</code>
     <code ng-show="formData.sameAgentRegion == 'No'"> Cool, All your agents live in different regions</code>
-    <code ng-show="formData.sameAgentLanguage == 'Yes'"> and speak the same language.</code>
-    <code ng-show="formData.sameAgentLanguage == 'No'"> and speak different languages.</code>
     <br><code>Carry on !</code>
     <br>
     <br>
 </div>
 
-<div class="form-group row" ng-show="formData.sameAgentRegion != null && formData.sameAgentLanguage != null">
+<div class="form-group row" ng-show="formData.sameAgentRegion != null">
     <div class="col-xs-6 col-xs-offset-3">
-        <a ui-sref="form.ques-agentTastes" class="btn btn-block btn-info">
+        <a ui-sref="form.ques-languageOfAgents" class="btn btn-block btn-info">
         Next Section 
         <span class="glyphicon glyphicon-circle-arrow-right"></span>
         </a>
