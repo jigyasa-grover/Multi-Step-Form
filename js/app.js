@@ -53,9 +53,14 @@ angular.module('formApp', ['ngAnimate', 'ui.router', 'ngFileSaver'])
         templateUrl: 'forms/ques-companyAgents.html'
     })
 
+    .state('form.ques-politicalAgents', {
+        url: '/ques-politicalAgents',
+        templateUrl: 'forms/ques-politicalAgents.html'
+    })
 
 
-    
+
+
 
     .state('form.ques-numberOfAgents', {
         url: '/ques-numberOfAgents',
