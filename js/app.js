@@ -60,30 +60,6 @@ angular.module('formApp', ['ngAnimate', 'ui.router', 'ngFileSaver'])
 
 
 
-
-
-    .state('form.ques-numberOfAgents', {
-        url: '/ques-numberOfAgents',
-        templateUrl: 'forms/ques-numberOfAgents.html'
-    })
-
-    .state('form.ques-typesOfAgents', {
-        url: '/ques-typesOfAgents',
-        templateUrl: 'forms/ques-typesOfAgents.html'
-    })
-
-
-
-    .state('form.ques-maxLoops', {
-        url: '/ques-maxLoops',
-        templateUrl: 'forms/ques-maxLoops.html'
-    })
-
-    .state('form.ques-hashtagProb', {
-        url: '/ques-hashtagProb',
-        templateUrl: 'forms/ques-hashtagProb.html'
-    })
-
     .state('form.ques-rates', {
         url: '/ques-rates',
         templateUrl: 'forms/ques-rates.html'
