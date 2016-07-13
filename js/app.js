@@ -63,18 +63,22 @@ angular.module('formApp', ['ngAnimate', 'ui.router', 'ngFileSaver'])
         templateUrl: 'forms/ques-politicalAgents.html'
     })
 
+    .state('form.ques-humorousAgents', {
+        url: '/ques-humorousAgents',
+        templateUrl: 'forms/ques-humorousAgents.html'
+    })
+
+    .state('form.formSubmission', {
+        url: '/formSubmission',
+        templateUrl: 'forms/formSubmission.html'
+    })
+
 
 
     .state('form.ques-rates', {
         url: '/ques-rates',
         templateUrl: 'forms/ques-rates.html'
     })
-
-    // url will be /form/lastQues
-    .state('form.lastQues', {
-        url: '/lastQues',
-        templateUrl: 'forms/lastQues.html'
-    });
 
     // Catch all route
     // Send users to the form page 
